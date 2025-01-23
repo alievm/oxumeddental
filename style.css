@@ -12,6 +12,10 @@ body {
 a {
   text-decoration: none;
 }
+
+img {
+  object-fit: cover
+}
 input,
 textarea {
   border: none;
