@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./assets/icons/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзывы | OXU MED DENTAL</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+  <nav>
+    <div class="container">
+      <div class="top_nav">
+        <div class="top_nav_left">
+          <p>город Бухара, просп. Абу Али ибн Сины, 20А, 200100</p>
+          <p>Пн-сб 9:00–22:00</p>
+        </div>
+        <div class="top_nav_right">
+          <a href="https://www.instagram.com/oxu_med_dental_uz_"><p>Instagram</p></a>
+          <a href="#"><p>TikTok</p></a>
+          <a href="https://www.facebook.com/profile.php?id=61572432622038"><p>Facebook</p></a>
+        </div>
+      </div>
+      <div class="main_nav">
+        <a href="./index.html">
+          <img height="80" width="80" src="./assets/images/logo.svg" alt="stomatologiya buxoro"/>
+        </a>
+
+        <div class="nav_menu">
+          <a href="./doctors.html"><p>Наши специалисты</p></a>
+          <div class="services_nav_btn">
+            <a href="./services.html"><p>Услуги</p></a>
+            <img src="./assets/icons/chev-down.svg" alt="stomatologiya buxoro"/>
+          </div>
+          <a href="./prices.html"><p>Цены</p></a>
+          <a href="./reviews.html"><p>Отзывы</p></a>
+          <a href="./about.html"><p>О клинике</p></a>
+          <a href="./portfolio.html"><p>Примеры работ</p></a>
+          <a href="./contacts.html"><p>Контакты</p></a>
+        </div>
+        <div class="main_nav_right">
+          <img
+                  class="search_btn"
+                  onclick="searchToggle()"
+                  src="./assets/icons/search.svg"
+                  alt="stomatologiya buxoro"
+          />
+          <a href="tel:+78126435443" class="phone_wrapper">
+            <div class="phone"><p>+998 91 831-99-99</p></div>
+          </a>
+          <div class="mob_menu_btn">
+            <img
+                    onclick="menuToggle()"
+                    src="./assets/icons/burger.svg"
+                    alt="stomatologiya buxoro"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="mob_menu_wrapper">
+        <div class="mob_menu_exit">
+          <img onclick="menuToggle()" src="./assets/icons/exit.svg" alt="stomatologiya buxoro"/>
+        </div>
+        <div class="nav_menu">
+          <a href="./doctors.html"><p>Наши специалисты</p></a>
+          <a href="./services.html"><p>Услуги</p></a>
+          <a href="./prices.html"><p>Цены</p></a>
+          <a href="./reviews.html"><p>Отзывы</p></a>
+          <a href="./about.html"><p>О клинике</p></a>
+          <a href="./portfolio.html"><p>Примеры работ</p></a>
+          <a href="./contacts.html"><p>Контакты</p></a>
+          <a href="./calculator.html"><p>Калькулятор</p></a>
+        </div>
+      </div>
+
+      <div class="search_wrapper">
+        <div class="container">
+          <div class="search_wrapper_top">
+            <p>Поиск по сайту <span>Найдено 0 результатов</span></p>
+            <img
+                    onclick="searchToggle()"
+                    src="./assets/icons/close.svg"
+                    alt="stomatologiya buxoro"
+            />
+          </div>
+          <div class="nav_search_input">
+            <input type="text" placeholder="Какую услугу вы ищите?"/>
+            <div class="nav_search_input_icons">
+              <img src="./assets/icons/search.svg" alt="stomatologiya buxoro"/>
+              <div></div>
+              <img src="./assets/icons/close.svg" alt="stomatologiya buxoro"/>
+            </div>
+          </div>
+          <div class="search_wrapper_desc">
+            <h4>По вашему запросу ничего не найдено</h4>
+            <h3>Рекомендации:</h3>
+            <ul>
+              <li>Убедитесь, что все слова написаны без ошибок;</li>
+              <li>Попробуйте использовать другие ключевые слова;</li>
+              <li>
+                Попробуйте использовать более популярные ключевые слова.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <div class="green_bg">
+      <div class="breadcump container">
+        <a href="./index.html">
+          <img src="./assets/icons/home.svg" alt="" />
+        </a>
+        <img src="./assets/icons/chev-right.svg" alt="" />
+        <p>Отзывы</p>
+      </div>
+
+      <div class="main_header_title container" style="margin: 40px auto">
+        <h1>Отзывы</h1>
+      </div>
+
+      <div class="container">
+        <div class="revs_btns tabs_list ais">
+          <button class="revs_btn revs_btn_active" data-id="rev1">
+            Видеотзывы
+          </button>
+          <button class="revs_btn" data-id="rev2">Текстовые отзывы</button>
+        </div>
+
+        <div class="reviews_block reviews_block_active" id="rev1">
+          <div class="carousel_wrapper">
+            <div class="carousel_container revs_carousel">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rev_card">
+                    <img
+                            class="rev_card_img"
+                            src="./assets/images/videoframe_254.png"
+                            alt="stomatologiya buxoro"
+                    />
+                    <img
+                            class="rev_card_play"
+                            src="./assets/icons/play-rev.svg"
+                            alt="stomatologiya buxoro"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rev_card">
+                    <img
+                            class="rev_card_img"
+                            src="./assets/images/fetch.jfif"
+                            alt="stomatologiya buxoro"
+                    />
+                    <img
+                            class="rev_card_play"
+                            src="./assets/icons/play-rev.svg"
+                            alt="stomatologiya buxoro"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rev_card">
+                    <img
+                            class="rev_card_img"
+                            src="./assets/images/videoframe_4429.png"
+                            alt="stomatologiya buxoro"
+                    />
+                    <img
+                            class="rev_card_play"
+                            src="./assets/icons/play-rev.svg"
+                            alt="stomatologiya buxoro"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rev_card">
+                    <img
+                            class="rev_card_img"
+                            src="./assets/images/videoframe_396.png"
+                            alt="stomatologiya buxoro"
+                    />
+                    <img
+                            class="rev_card_play"
+                            src="./assets/icons/play-rev.svg"
+                            alt="stomatologiya buxoro"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rev_card">
+                    <img
+                            class="rev_card_img"
+                            src="./assets/images/videoframe_816.png"
+                            alt="stomatologiya buxoro"
+                    />
+                    <img
+                            class="rev_card_play"
+                            src="./assets/icons/play-rev.svg"
+                            alt="stomatologiya buxoro"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rev_card">
+                    <img
+                            class="rev_card_img"
+                            src="./assets/images/videoframe_1105.png"
+                            alt="stomatologiya buxoro"
+                    />
+                    <img
+                            class="rev_card_play"
+                            src="./assets/icons/play-rev.svg"
+                            alt="stomatologiya buxoro"
+                    />
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="rev_card">
+                    <img
+                            class="rev_card_img"
+                            src="./assets/images/videoframe_5707.png"
+                            alt="stomatologiya buxoro"
+                    />
+                    <img
+                            class="rev_card_play"
+                            src="./assets/icons/play-rev.svg"
+                            alt="stomatologiya buxoro"
+                    />
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="car_arrows">
+              <div class="car_arrow car_arrow_left revs_car_left">
+                <img src="./assets/icons/car-arr-l.svg" alt="stomatologiya buxoro"/>
+              </div>
+              <div class="car_arrow car_arrow_right revs_car_right">
+                <img src="./assets/icons/car-arr-r.svg" alt="stomatologiya buxoro"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews_block" id="rev2">
+          <div class="carousel_wrapper">
+            <div class="carousel_container rev_text_carousel">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="text_rev_card">
+                    <div class="text_rev_card_top">
+                      <div class="text_rev_card_author">
+                        <img
+                                class="text_rev_card_author_avatar"
+                                src="./assets/images/a04d849cf591c2f980548b982f461401.jpg"
+                                alt="stomatologiya buxoro"
+                        />
+                        <div>
+                          <p>Bonu</p>
+                          <img src="./assets/icons/stars.svg" alt="stomatologiya buxoro"/>
+                        </div>
+                      </div>
+                      <div class="text_rev_card_text">
+                        <p>
+                          Мен кеча тишларимни отбеливени қилдирдим ва натижадан жуда мамнунман!
+                          Тишларимнинг ранги бир неча тонга очароқ бўлди, ҳозир мен жуда кўп ишонч
+                          билан куляпман. Процедура жуда тез ва қулай бўлиб ўтди, мутахассислар эса ўз
+                          ишларини юксак профессионаллик билан бажаришди. Рахмат узимга жуда ёкти
+                        </p>
+                      </div>
+                    </div>
+                    <div class="text_rev_card_top_btm">
+                      <p>14 октября 2024</p>
+                      <img src="./assets/icons/point.svg" alt="stomatologiya buxoro"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="text_rev_card">
+                    <div class="text_rev_card_top">
+                      <div class="text_rev_card_author">
+                        <img
+                                class="text_rev_card_author_avatar"
+                                src="./assets/images/a04d849cf591c2f980548b982f461401.jpg"
+                                alt="stomatologiya buxoro"
+                        />
+                        <div>
+                          <p>"Конгресмен"</p>
+                          <img src="./assets/icons/stars.svg" alt="stomatologiya buxoro"/>
+                        </div>
+                      </div>
+                      <div class="text_rev_card_text">
+                        <p>
+                          Хочу выразить огромную благодарность Врачам стоматологам клиники Dr. OXU
+                          dental clinic.
+                          Я, как недавний клиент хочу выразить моему лечащему врачу стоматологу
+                          Мироншоху искреннюю благодарность за исключительную заботу и
+                          экспертные знания, которые вы предоставили во время моих недавних визитов.
+                          Ваш профессионализм, внимание к деталям и сострадательный подход
+                          действительно изменили
+                          мое стоматологическое
+                          путешествие.
+                          Спасибо Вам за чуткость,
+                          внимание, понимание, за ваши улыбки, доброту, за ваш труд в вашей непростой
+                          работе. Как клиент я очень доволен тем что выбрал именно вашу клинику.
+                          Особенная благодарность руководителю данной клиники за выбор хороших
+                          специалистов и персонала в общем.
+                          С наступающим новым годом вас уважаемый коллектив Dr. OXU dental clinic. ☺️
+                        </p>
+                      </div>
+                    </div>
+                    <div class="text_rev_card_top_btm">
+                      <p>21 ноября 2024</p>
+                      <img src="./assets/icons/point.svg" alt="stomatologiya buxoro"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="text_rev_card">
+                    <div class="text_rev_card_top">
+                      <div class="text_rev_card_author">
+                        <img
+                                class="text_rev_card_author_avatar"
+                                src="./assets/images/a04d849cf591c2f980548b982f461401.jpg"
+                                alt="stomatologiya buxoro"
+                        />
+                        <div>
+                          <p>Фирдавс</p>
+                          <img src="./assets/icons/stars.svg" alt="stomatologiya buxoro"/>
+                        </div>
+                      </div>
+                      <div class="text_rev_card_text">
+                        <p>
+                          Assalomu aleykum raveton man raftam zor darav dandonotona tax karda metyan
+                          mo a in bat faqat xaminjaba merem xozir skidka vaqtaw rafta uspet kuneton
+                          bat uspet nakadanoton mumkin
+                        </p>
+                      </div>
+                    </div>
+                    <div class="text_rev_card_top_btm">
+                      <p>01 декабря 2024</p>
+                      <img src="./assets/icons/point.svg" alt="stomatologiya buxoro"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="text_rev_card">
+                    <div class="text_rev_card_top">
+                      <div class="text_rev_card_author">
+                        <img
+                                class="text_rev_card_author_avatar"
+                                src="./assets/images/a04d849cf591c2f980548b982f461401.jpg"
+                                alt="stomatologiya buxoro"
+                        />
+                        <div>
+                          <p>Имрана</p>
+                          <img src="./assets/icons/stars.svg" alt="stomatologiya buxoro"/>
+                        </div>
+                      </div>
+                      <div class="text_rev_card_text">
+                        <p>
+                          Uzbekistonda eng yaxshi tish doktorlari Allohga shukr avval tishim ogrisayam
+                          dokrorga birmasdim xozir qurqmay boraman
+                        </p>
+                      </div>
+                    </div>
+                    <div class="text_rev_card_top_btm">
+                      <p>08 декабря 2024</p>
+                      <img src="./assets/icons/point.svg" alt="stomatologiya buxoro"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="text_rev_card">
+                    <div class="text_rev_card_top">
+                      <div class="text_rev_card_author">
+                        <img
+                                class="text_rev_card_author_avatar"
+                                src="./assets/images/a04d849cf591c2f980548b982f461401.jpg"
+                                alt="stomatologiya buxoro"
+                        />
+                        <div>
+                          <p>Мафтуна</p>
+                          <img src="./assets/icons/stars.svg" alt="stomatologiya buxoro"/>
+                        </div>
+                      </div>
+                      <div class="text_rev_card_text">
+                        <p>
+                          Men bularga kariesni tozalatib,plomba qildirdm. Ishlari sifatli va narxlari
+                          ham arzon ekan
+                        </p>
+                      </div>
+                    </div>
+                    <div class="text_rev_card_top_btm">
+                      <p>14 января 2025</p>
+                      <img src="./assets/icons/point.svg" alt="stomatologiya buxoro"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="text_rev_card">
+                    <div class="text_rev_card_top">
+                      <div class="text_rev_card_author">
+                        <img
+                                class="text_rev_card_author_avatar"
+                                src="./assets/images/a04d849cf591c2f980548b982f461401.jpg"
+                                alt="stomatologiya buxoro"
+                        />
+                        <div>
+                          <p>Мухаммад</p>
+                          <img src="./assets/icons/stars.svg" alt="stomatologiya buxoro"/>
+                        </div>
+                      </div>
+                      <div class="text_rev_card_text">
+                        <p>
+                          Men bu klinikani barchaga bemalol taklif qila olaman
+                        </p>
+                      </div>
+                    </div>
+                    <div class="text_rev_card_top_btm">
+                      <p>19 января 2025</p>
+                      <img src="./assets/icons/point.svg" alt="stomatologiya buxoro"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="car_arrows">
+              <div class="car_arrow car_arrow_left rev_text_car_left">
+                <img src="./assets/icons/car-arr-l.svg" alt="stomatologiya buxoro"/>
+              </div>
+              <div class="car_arrow car_arrow_right rev_text_car_right">
+                <img src="./assets/icons/car-arr-r.svg" alt="stomatologiya buxoro"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="show_more_all_btn">
+          <button class="main_btn">Все отзывы</button>
+        </div>
+        <section>
+          <div class="block_title trophy">
+            <h3>
+              Мы гордимся и дорожим своей <br />
+              репутацией
+            </h3>
+          </div>
+          <div class="reputation_cards">
+            <div class="reputation_card">
+              <img height="50px" src="./assets/images/google.png" alt="stomatologiya buxoro"/>
+              <h3>5.0</h3>
+              <img src="./assets/icons/stars.svg" alt="stomatologiya buxoro"/>
+              <p>35отзывов</p>
+            </div>
+            <div class="reputation_card">
+              <img src="./assets/images/trophies/7.svg" alt="stomatologiya buxoro"/>
+              <h3>5.0</h3>
+              <img src="./assets/icons/stars.svg" alt="stomatologiya buxoro"/>
+              <p>35отзывов</p>
+            </div>
+            <div class="reputation_card">
+              <img src="./assets/images/trophies/8.svg" alt="stomatologiya buxoro"/>
+              <h3>5.0</h3>
+              <img src="./assets/icons/stars.svg" alt="stomatologiya buxoro"/>
+              <p>35отзывов</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="block_title">
+            <h3>Как нас найти?</h3>
+          </div>
+          <div class="map">
+            <iframe class="maping"
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab772bd63095b8f55c05e41f555e8b39751a9ec0725d02993da01ddec72ba0b9a&amp;source=constructor"
+                    width="1280" height="720" frameborder="0"></iframe>
+            <div class="contacts_block" style="z-index: 999">
+              <div class="contact_item">
+                <p>Пн-сб 9:00–21:00</p>
+                <h4>город Бухара, просп. Абу Али ибн Сины, 20А, 200100</h4>
+              </div>
+              <div class="contact_items">
+                <div class="contact_item">
+                  <p>Телефон</p>
+                  <a href="tel:+998918319999"><h4>+998 91 831-99-99</h4></a>
+                </div>
+                <div class="contact_item">
+                  <p>Почта</p>
+                  <a href="mailto:oxumeddental@gmail.com"><h4>oxumeddental@gmail.com</h4></a>
+                </div>
+              </div>
+              <div class="point">
+                <img src="./assets/icons/point.svg" alt="stomatologiya buxoro"/>
+                <p>Построить маршрут до клиники</p>
+              </div>
+              <div class="c_desc">
+                <p>
+                  На территории клиники есть парковка, для уточнения <br/>
+                  деталей обращайтесь к администратору
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  <footer>
+    <div class="footer_wrapper container">
+      <div class="footer_top">
+        <a href="./index.html">
+          <img src="./assets/images/white.svg" alt="stomatologiya buxoro"/>
+        </a>
+        <p>© 2025 Стоматологический Центр OXU MED DENTAL</p>
+      </div>
+      <div class="footer_main">
+        <div class="footer_contacts">
+          <a href="tel:+998918319999"><h4>+998 91 831-99-99</h4></a>
+          <p>Пн-сб 9:00–21:00</p>
+          <p style="margin-top: 32px">Мы в социальных сетях</p>
+          <div class="footer_socials">
+            <a href="#">
+              <img src="./assets/icons/inst.svg" alt="stomatologiya buxoro"/>
+            </a>
+            <a href="#">
+              <img src="./assets/icons/yt.svg" alt="stomatologiya buxoro"/>
+            </a>
+            <a href="#">
+              <img src="./assets/icons/vk.svg" alt="stomatologiya buxoro"/>
+            </a>
+          </div>
+        </div>
+        <!--            <div class="footer_menu">-->
+        <!--                <a href="#"><p>Ортопедия</p></a>-->
+        <!--                <a href="#"><p>Терапия</p></a>-->
+        <!--                <a href="#"><p>Костная пластика</p></a>-->
+        <!--                <a href="#"><p>Хирургия</p></a>-->
+        <!--                <a href="#"><p>Ортодонтия</p></a>-->
+        <!--                <a href="#"><p>Имплантация</p></a>-->
+        <!--            </div>-->
+        <!--            <div class="footer_menu">-->
+        <!--                <a href="#"><p>О клинике</p></a>-->
+        <!--                <a href="#"><p>Наши специалисты</p></a>-->
+        <!--                <a href="#"><p>Цены</p></a>-->
+        <!--                <a href="#"><p>Отзывы</p></a>-->
+        <!--                <a href="#"><p>Примеры работ</p></a>-->
+        <!--                <a href="./contacts.html"><p>Контакты</p></a>-->
+        <!--                <a href="#"><p>Блог</p></a>-->
+        <!--            </div>-->
+        <div class="footer_q">
+          <h4>
+            Если у вас остались вопросы, <br/>
+            Напишите нам
+          </h4>
+          <a href="#"><p>Как до нас добраться?</p></a>
+        </div>
+      </div>
+      <div class="footer_btm">
+        <a href="#"><p>Политика конфиденциальности</p></a>
+
+      </div>
+    </div>
+  </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".revs_carousel", {
+          loop: false,
+          spaceBetween: 26,
+          slidesPerView: 4,
+          navigation: {
+            nextEl: ".revs_car_right",
+            prevEl: ".revs_car_left",
+          },
+          pagination: {
+            el: ".docs_pag",
+            clickable: true,
+          },
+          breakpoints: {
+            350: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1100: {
+              slidesPerView: 3,
+            },
+            1300: {
+              slidesPerView: 4,
+            },
+          },
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".rev_text_carousel", {
+          loop: false,
+          spaceBetween: 26,
+          slidesPerView: 3,
+          navigation: {
+            nextEl: ".rev_text_car_right",
+            prevEl: ".rev_text_car_left",
+          },
+          pagination: {
+            el: ".docs_pag",
+            clickable: true,
+          },
+          breakpoints: {
+            350: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            900: {
+              slidesPerView: 3,
+            },
+          },
+        });
+      });
+    </script>
+    <script src="./scripts/tabs.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
